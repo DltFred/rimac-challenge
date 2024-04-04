@@ -1,0 +1,66 @@
+.container {
+
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  grid-template-areas:
+    "titulo imagen"
+    "parrafo parrafo"
+    "formulario formulario";
+  padding: 0 1.5rem;
+
+  .tittleContainer {
+    position: relative;
+    grid-area: titulo;
+    align-self: center;
+
+
+    .tittle {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+    }
+  }
+
+  .image {
+    justify-self: end;
+    width: 136px;
+    object-fit: fill;
+    grid-area: imagen;
+  }
+
+  .paragraph {
+    grid-area: parrafo;
+    padding-top: 2rem;
+    border-top: 1px solid #CCD1EE;
+    margin-top: 2rem;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    line-height: 20px;
+  }
+
+  .form {
+    grid-area: formulario;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .politicas {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    gap: 1rem .25rem;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: var(--black);
+    }
+  }
+}

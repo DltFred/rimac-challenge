@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid #CCD1EE;
+  background: #FFF;
+  position: relative;
+  grid-column: 1/-1;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media screen and (width >=768px) {
+    grid-column: 4/10;
+  }
+
+  .graphic {
+    flex: 0;
+  }
+
+  >div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 0.25rem;
+  }
+}
+
+.checked {
+  border: 2px solid #13172C;
+  background: #F8F9FF;
+}
+
+.tittle {
+  font-family: 'Lato';
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  margin: 0;
+
+
+}
+
+.description {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+.button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}

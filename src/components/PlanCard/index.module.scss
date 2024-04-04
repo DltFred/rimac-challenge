@@ -1,0 +1,53 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #CCD1EE;
+  background: #FFF;
+  position: relative;
+  grid-column: 1/-1;
+  box-sizing: border-box;
+
+  >h1 {
+    margin: 0;
+  }
+
+  >p {
+    margin: 0;
+  }
+
+  .p {
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+    color: #7981B2;
+  }
+
+  .price {
+    margin: 0;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: -0.2px;
+    color: #141938;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #D7DBF5;
+    margin-bottom: 1rem;
+  }
+
+  .p3 {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    color: #141938;
+  }
+
+  .callToAction {
+    margin-top: 3rem;
+  }
+
+}

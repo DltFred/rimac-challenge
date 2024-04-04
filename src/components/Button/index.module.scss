@@ -1,0 +1,25 @@
+.button {
+  border-radius: 30px;
+  padding: 16px 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: inset 380px 0 var(--backgroundColor), inset -380px 0 var(--backgroundColor);
+  border: 2px solid var(--backgroundColor);
+  transition: .3s ease-in-out;
+  font-family: 'BR Sonoma', sans-serif;
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button:hover {
+  box-shadow: inset 0 0 var(--backgroundColor), inset 0 0 var(--backgroundColor);
+  color: var(--backgroundColor);
+  border: 2px solid var(--backgroundColor);
+}

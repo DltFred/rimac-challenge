@@ -1,0 +1,58 @@
+.container {
+  background-color: #FAFBFF;
+  overflow-x: hidden;
+  min-height: 100dvh;
+}
+
+.section {
+  padding: 0 1rem;
+
+  >h1 {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 32px;
+    margin: 1rem 0 3rem;
+    text-align: center;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 24px;
+    padding: 1rem 1.5rem;
+
+    >span {
+      font-family: 'Lato';
+      font-weight: 900;
+      font-size: 10px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .name {
+      display: flex;
+      align-items: end;
+      gap: 12px;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #D7DBF5;
+
+      >p {
+        margin: 0;
+      }
+    }
+
+    >h2 {
+      margin-top: 1.5rem;
+      font-family: 'Lato';
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+    }
+
+    >p {
+      font-family: 'Lato';
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.1px;
+    }
+  }
+}

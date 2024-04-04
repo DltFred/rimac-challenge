@@ -1,0 +1,82 @@
+.inputField {
+  position: relative;
+  margin-top: 0px;
+  width: 100%;
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"] {
+    color: #494F66;
+    border: 1px solid #A9AFD9;
+    width: 100%;
+    height: 48px;
+    padding: 10px .75rem 0;
+    border-radius: .375rem;
+    border: 1px solid #5E6488;
+    background: #F8F9FF;
+    outline: none;
+    font-size: 16px;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: border 0.3s, -webkit-box-shadow 0.3s;
+    transition: box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+    -webkit-box-shadow: 0 0 0px 1000px #FFF inset;
+    -webkit-text-fill-color: #494F66;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+    text-overflow: ellipsis;
+
+    &::-ms-clear {
+      display: none;
+    }
+  }
+
+  input.inputSelect {
+    border-radius: 0px 6px 6px 0px;
+  }
+
+  input.inputError {
+    border: 1px solid #EC0B35;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+  }
+
+  input:disabled,
+  select:disabled {
+    background-color: #F0F2FA;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    box-shadow: 0 0 0px 1000px transparent inset;
+    -webkit-text-fill-color: #7981B2;
+  }
+}
+
+.labelInput {
+  font-family: 'BR Sonoma';
+  color: #5E6488;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  margin-top: 0;
+  margin-bottom: 4px;
+  position: absolute;
+  left: .75rem;
+  top: 5px;
+}
+
+.showError {
+  color: #EC0B35;
+  font-size: 12px;
+  display: block;
+  margin-top: 8px;
+  text-align: left;
+}

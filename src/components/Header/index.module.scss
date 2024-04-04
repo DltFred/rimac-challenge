@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  height: 3.5rem;
+  align-items: center;
+  padding: 0 1rem;
+
+  p,
+  a {
+    margin: 0;
+    display: inline-block;
+  }
+
+  a {
+    display: flex;
+    color: black;
+    align-items: center;
+    gap: .25em;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  @media screen and (width <=768px) {
+    p {
+      display: none;
+    }
+  }
+}
