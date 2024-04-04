@@ -15,6 +15,7 @@ import style from './index.module.scss'
 
 
 export const HOME = (): JSX.Element => {
+  localStorage.clear()
   const [documentType, setDocumentType] = useState('DNI')
   const [documentValue, setDocumentValue] = useState('')
   const [identityError, setIdentityError] = useState(false)

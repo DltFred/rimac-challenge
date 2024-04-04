@@ -8,10 +8,23 @@
     "formulario formulario";
   padding: 0 1.5rem;
 
+  @media screen and (width >=768px) {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1300px;
+    grid-template-rows: 50px 90px 50px 350px 50px;
+    grid-template-areas:
+      "algo algo"
+      "imagen titulo"
+      "imagen parrafo"
+      "imagen formulario";
+    gap: 0 2rem;
+  }
+
   .tittleContainer {
     position: relative;
     grid-area: titulo;
     align-self: center;
+
 
 
     .tittle {
@@ -26,6 +39,11 @@
     width: 136px;
     object-fit: fill;
     grid-area: imagen;
+
+    @media screen and (width >=768px) {
+      width: 100%;
+      max-width: 390px;
+    }
   }
 
   .paragraph {
@@ -37,12 +55,25 @@
     font-weight: 600;
     letter-spacing: .2px;
     line-height: 20px;
+
+    @media screen and (width >=768px) {
+      align-self: end;
+      margin: 0;
+      border: none;
+      padding: 0;
+      max-width: 450px;
+    }
   }
 
   .form {
     grid-area: formulario;
     display: grid;
     gap: 1rem;
+
+    @media screen and (width >=768px) {
+      align-self: center;
+      max-width: 450px;
+    }
   }
 
   .politicas {

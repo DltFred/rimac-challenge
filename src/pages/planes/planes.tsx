@@ -61,20 +61,22 @@ export const Planes = (): JSX.Element => {
       <div className={style.section}>
         <h1>{userInfo.name} ¿Para quién deseas cotizar?</h1>
         <p>Selecciona la opción que se ajuste más a tus necesidades.</p>
-        <Card
-          onClick={() => { handleClick(1) }}
-          checked={itemSelected === 1}
-          textLabel={FILTER_PLAN[1]}
-          description='Cotiza tu seguro de salud y agrega familiares si así lo deseas.' >
-          <img src={iconForMe} alt="icon card" />
-        </Card>
-        <Card
-          onClick={() => { handleClick(2) }}
-          checked={itemSelected === 2}
-          textLabel={FILTER_PLAN[2]}
-          description='Realiza una cotización para uno de tus familiares o cualquier persona.' >
-          <img src={iconForOther} alt="icon card" />
-        </Card>
+        <div className={style.cards}>
+          <Card
+            onClick={() => { handleClick(1) }}
+            checked={itemSelected === 1}
+            textLabel={FILTER_PLAN[1]}
+            description='Cotiza tu seguro de salud y agrega familiares si así lo deseas.' >
+            <img src={iconForMe} alt="icon card" />
+          </Card>
+          <Card
+            onClick={() => { handleClick(2) }}
+            checked={itemSelected === 2}
+            textLabel={FILTER_PLAN[2]}
+            description='Realiza una cotización para uno de tus familiares o cualquier persona.' >
+            <img src={iconForOther} alt="icon card" />
+          </Card>
+        </div>
       </div>
 
       <div className={style.plans}>

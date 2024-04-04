@@ -1,24 +1,33 @@
 .header {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   max-width: 1300px;
   height: 3.5rem;
   align-items: center;
   padding: 0 1rem;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
 
   p,
   a {
     margin: 0;
-    display: inline-block;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   a {
     display: flex;
     color: black;
-    align-items: center;
     gap: .25em;
     text-decoration: none;
     font-weight: 700;
+    align-items: center;
   }
 
   @media screen and (width <=768px) {
@@ -26,4 +35,5 @@
       display: none;
     }
   }
+
 }
